@@ -14,17 +14,71 @@ h2, h3 {
     color: rgb(175, 215, 230);
 }
 
-label {
-    float: left;
-}
-input {
-    display: flex;
-    justify-content: left;
-}
 
+/*Flynn's Application Page*/
 fieldset {
     border-color: rgb(175, 215, 230);
     border-style: solid;
+    background-color: #acacac ;
+    color: black;
+  }
+
+legend {
+    color: rgb(25, 120, 175);
+    padding: 2px;
+    float: left;
+    text-decoration: underline;
+}
+
+label {
+    float: left;
+}
+ 
+.buttons {
+    background-color: #acacac;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.buttons:hover {
+    color: rgb(175, 215, 230);
+}
+.text-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  
+  .text-group label {
+    color: black;
+    text-align: left;
+    align-self: center;
+  }
+  
+  .text-group input {
+    width: 30%;
+  }
+
+.radio-group {
+    display: flex;
+    gap: 4px; /* space between buttons */
+  }
+  
+  .radio-label {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .radio-option {
+    cursor: pointer;
+    accent-color:  rgb(175, 215, 230);
   }
 
 /*Benjamin's About Page*/
@@ -99,6 +153,11 @@ fieldset {
     padding: 10px 20px;
 }
 
+.right-section ul {
+    padding-left: 0; /* Remove default padding */
+    margin-left: 20px; /* Add a smaller margin to keep bullets visible */
+}
+
 .divider { /* vertical line with spacing left and right*/
     width: 1px;
     background-color: black;
@@ -126,22 +185,3 @@ fieldset {
     padding-right: 400px;
 }
 
-/* Connor's Jobs Page */
-
-.jobs-body {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-.jobs-details {
-    background-color: #acacac;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-}
-
-.jobs-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
